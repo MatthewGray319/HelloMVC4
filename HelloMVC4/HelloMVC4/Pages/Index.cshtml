@@ -1,10 +1,18 @@
 ﻿@page
-@model IndexModel
+@model HelloMVC4.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Jim's Home page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome to Jim's Web Page</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <p>Hello World</p>
+    <form action="/Greet/Index" method="get">
+        <input type="text" name="name" />
+        <input type="submit" value="Submit" />
+    </form>
 </div>
